@@ -1,0 +1,9 @@
+{
+   "type": "arc",
+   "rarity": "common",
+   "encounters": {
+      "wave_generator": "file(encounters/wave_generator.json)",
+      "goblin_wave_1": "file(encounters/goblin_wave_1.json)",
+      "wait_for_turnip_shooter": "file(encounters/wait_for_turnip_shooter.json)"
+   }
+}

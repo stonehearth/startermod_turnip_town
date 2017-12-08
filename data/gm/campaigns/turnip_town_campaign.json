@@ -1,0 +1,14 @@
+{
+   "type" : "campaign",
+   "rarity" : "common",
+
+   "arcs" : {
+      "trigger" : {
+         "turnip_town" : "file(arcs/trigger/turnip_town/turnip_town_arc.json)"
+      },
+      "challenge" : {
+      },
+      "climax" : {
+      }
+   }
+}

@@ -1,0 +1,37 @@
+{
+   "info" :{
+      "name" : "Turnip Town",
+      "version" : 3
+   },
+   "default_locale": "en",
+
+   "server_init_script" : "file(turnip_town_server)",
+
+   "aliases" : {
+      "data:gm_index" : "file(data/gm/gm_index.json)",
+      "data_driven:world:mini_game" : "file(data/data_driven_world/mini_game_world.json)",
+      "data_driven:world:harvest_test" : "file(data/data_driven_world/harvest_test_world.json)",
+      "data_driven:world:profession_test" : "file(data/data_driven_world/profession_test_world.json)",
+      "data_driven:world:equipment_test" : "file(data/data_driven_world/equipment_test_world.json)",
+      "data_driven:world:terrain_test" : "file(data/data_driven_world/terrain_test_world.json)",
+      "monster_tuning:goblins:turndown": "file(data/monster_tuning/goblins/turndown)",
+   },
+
+   "overrides" : {
+      "stonehearth/services/server/farming/data/all_crops.json" : "file(services/server/farming/data/all_crops.json)",
+      "stonehearth/jobs/engineer/recipes/recipes.json" : "file(jobs/engineer/recipes/recipes.json)",
+      "stonehearth/jobs/engineer/recipes/turnip_shooter_recipe.json" : "file(jobs/engineer/recipes/turnip_shooter_recipe.json)",
+      "stonehearth/jobs/engineer/engineer_description.json" : "file(jobs/engineer/engineer_description.json)",
+      "stonehearth:data:gm_index": "startermod_turnip_town:data:gm_index"
+   },
+
+   "mixintos" : {
+      "stonehearth/entities/crops/turnip_crop/turnip_crop.json" : "file(entities/crops/turnip_crop/turnip_crop.json)",
+   },
+
+   "ui" :  {
+      "skip_title": true,
+      "empty" : "http://radiant/stonehearth/ui/root/empty.html",
+      "homepage" : "http://radiant/stonehearth/ui/root/index.html"
+   }
+}

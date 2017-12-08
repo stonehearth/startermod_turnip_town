@@ -1,0 +1,7 @@
+{
+   "components": {
+      "stonehearth:growing": {
+         "growth_period": "10m"
+      }
+   }
+}

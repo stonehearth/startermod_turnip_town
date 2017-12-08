@@ -1,0 +1,8 @@
+{
+   "type": "index",
+   "campaigns": {
+      "turnip_town": {
+         "turnip_town": "file(campaigns/turnip_town_campaign.json)"
+      }
+   }
+}

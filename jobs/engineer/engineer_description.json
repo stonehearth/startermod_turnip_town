@@ -1,0 +1,131 @@
+{
+   "type": "job",
+   "enabled": true,
+   "job_id": "engineer",
+   "display_order": 1,
+   "alias": "stonehearth:jobs:engineer",
+   "display_name": "i18n(stonehearth:jobs.engineer.engineer_description.display_name)",
+   "controller": "stonehearth:class:engineer",
+   "description": "i18n(stonehearth:jobs.engineer.engineer_description.description)",
+   "requirements": "i18n(stonehearth:jobs.engineer.engineer_description.requirements)",
+   "abilities": "/stonehearth/jobs/engineer/engineer_abilities",
+   "equipment": {
+      "torso": "/stonehearth/jobs/engineer/engineer_outfit",
+      "mainhand": "stonehearth:engineer:wrench",
+      "helmet": "/stonehearth/jobs/engineer/engineer_helm"
+   },
+   "roles": "engineer_job crafter",
+   "talisman_uri": "stonehearth:engineer:talisman",
+   "default_stance": "passive",
+   "icon": "/stonehearth/jobs/engineer/images/icon.png",
+   "promotion_activity_name": "promote_engineer",
+   "task_groups": [
+      "stonehearth:task_groups:common_tasks",
+      "stonehearth:task_groups:restock",
+      "stonehearth:task_groups:placement",
+      "stonehearth:task_groups:mining",
+      "stonehearth:task_groups:repairing",
+      "stonehearth:task_groups:rescue",
+      "stonehearth:task_groups:crafting",
+      "stonehearth:task_groups:town_alert"
+   ],
+   "crafter": {
+      "work_effect": "wrench",
+      "recipe_list": "/stonehearth/jobs/engineer/recipes/recipes.json"
+   },
+   "workshop": {
+      "name": "i18n(stonehearth:jobs.engineer.engineer_workbench.engineer_workbench_ghost.display_name)",
+      "description": "i18n(stonehearth:jobs.engineer.engineer_workbench.engineer_workbench_ghost.description)",
+      "long_description": "i18n(stonehearth:jobs.engineer.engineer_workbench.engineer_workbench_ghost.description)",
+      "portrait": "/stonehearth/jobs/engineer/engineer_workbench/engineer_workbench.png",
+      "workbench_type": "stonehearth:engineer:workbench",
+      "skin_class": "engineer",
+      "open_sound": "stonehearth:sounds:ui:blacksmith_menu:menu_open",
+      "close_sound": "stonehearth:sounds:ui:carpenter_menu:menu_closed"
+   },
+   "parent_job": "stonehearth:jobs:blacksmith",
+   "parent_level_requirement": 1,
+   "initial_num_siege_weapons": {
+      "turret": 0,
+      "trap": 0
+   },
+   "xp_rewards": {
+      "craft_level_0": 15,
+      "craft_level_1": 17,
+      "craft_level_2": 19,
+      "craft_level_3": 21,
+      "craft_level_4": 23,
+      "craft_level_5": 25,
+      "craft_level_6": 27,
+      "repair_entity": 10,
+      "refill_ammo": 12
+   },
+   "max_level": 6,
+   "level_data": {
+      "0": {
+         "perks": [
+            {
+               "name": "i18n(stonehearth:jobs.engineer.engineer_description.level_0_data.perk_000_name)",
+               "id": "engineer_repair_structures",
+               "icon": "/stonehearth/jobs/engineer/images/level_0.png",
+               "description": "i18n(stonehearth:jobs.engineer.engineer_description.level_0_data.perk_000_description)",
+               "level": 0
+            },
+            {
+               "type": "increase_max_placeable_siege",
+               "name": "i18n(stonehearth:jobs.engineer.engineer_description.level_1_data.perk_001_name)",
+               "id": "engineer_increase_siege",
+               "icon": "/stonehearth/jobs/engineer/images/level_1.png",
+               "description": "i18n(stonehearth:jobs.engineer.engineer_description.level_1_data.perk_001_description)",
+               "max_num_siege_weapons": {
+                  "trap": 9001,
+                  "turret": 9001
+               },
+               "level": 1
+            }
+         ]
+      },
+      "1": {
+         "perks": [
+            {
+               "name": "i18n(stonehearth:jobs.engineer.engineer_description.level_1_data.perk_000_name)",
+               "id": "crafter_recipe_unlock_1",
+               "icon": "/stonehearth/jobs/common/images/standard_catalog.png",
+               "description": "i18n(stonehearth:jobs.engineer.engineer_description.level_1_data.perk_000_description)",
+               "level": 1
+            }
+         ]
+      },
+      "2": {
+         "perks": [
+            {
+               "type": "apply_buff",
+               "name": "i18n(stonehearth:jobs.engineer.engineer_description.level_2_data.perk_000_name)",
+               "id": "engineer_inventiveness_up_2",
+               "icon": "/stonehearth/jobs/common/images/artistic_inspiration.png",
+               "buff_name": "stonehearth:buffs:engineer:inventiveness_2",
+               "description": "i18n(stonehearth:jobs.engineer.engineer_description.level_2_data.perk_000_description)",
+               "level": 2,
+               "demote_fn": "remove_buff"
+            }
+         ]
+      },
+      "3": {
+         "perks": [
+            {
+               "name": "i18n(stonehearth:jobs.engineer.engineer_description.level_4_data.perk_000_name)",
+               "id": "crafter_recipe_unlock_3",
+               "icon": "/stonehearth/jobs/common/images/extended_catalog.png",
+               "description": "i18n(stonehearth:jobs.engineer.engineer_description.level_4_data.perk_000_description)",
+               "level": 3
+            }
+         ]
+      },
+      "4": {},
+      "6": {
+         "title": "i18n(stonehearth:jobs.engineer.engineer_description.level_6_data.title)",
+         "perks": [
+         ]
+      }
+   }
+}

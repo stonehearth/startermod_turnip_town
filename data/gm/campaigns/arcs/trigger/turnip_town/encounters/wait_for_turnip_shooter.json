@@ -1,0 +1,17 @@
+{
+   "type": "encounter",
+   "encounter_type": "wait_for_requirements_met",
+   "in_edge": "start",
+   "out_edge": "wave_generator",
+   "wait_for_requirements_met_info": {
+      "requirements": {
+         "item_placed_requirement": {
+            "item": "exists_in_world",
+            "uri": "stonehearth:gizmos:turnip_shooter",
+            "type": "deny_if_not",
+            "value": true
+         }
+      },
+      "recheck_delay": "1h"
+   }
+}

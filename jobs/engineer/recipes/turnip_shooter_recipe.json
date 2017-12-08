@@ -1,0 +1,21 @@
+{
+   "type": "recipe",
+   "work_units": 1,
+   "recipe_name": "i18n(stonehearth:jobs.engineer.recipes.turnip_shooter_recipe.recipe_name)",
+   "description": "i18n(stonehearth:jobs.engineer.recipes.turnip_shooter_recipe.description)",
+   "flavor": "i18n(stonehearth:jobs.engineer.recipes.turnip_shooter_recipe.flavor)",
+   "portrait": "/stonehearth/entities/gizmos/turnip_shooter/turnip_shooter.png",
+   "workshop": "stonehearth:engineer:workbench",
+   "level_requirement": 0,
+   "ingredients": [
+      {
+         "uri": "stonehearth:food:turnip:turnip_basket",
+         "count": 10
+      }
+   ],
+   "produces": [
+      {
+         "item": "stonehearth:gizmos:turnip_shooter"
+      }
+   ]
+}

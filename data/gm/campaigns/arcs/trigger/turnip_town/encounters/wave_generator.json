@@ -1,0 +1,18 @@
+{
+   "type": "encounter",
+   "encounter_type": "generator",
+   "in_edge": "wave_generator",
+   "generator_info": {
+      "delay": "1h",
+      "spawn_edge": {
+         "type": "trigger_one",
+         "out_edges": [
+            {
+               "out_edge": "goblin_wave_1",
+               "type": "weighted_edge",
+               "weight": 9001
+            }
+         ]
+      }
+   }
+}

@@ -1,0 +1,13 @@
+{
+   "craftable_recipes": {
+      "ranged_weapons": {
+         "ordinal": 1,
+         "name": "i18n(stonehearth:jobs.engineer.recipes.ranged_weapons_name)",
+         "recipes": {
+            "turnip_shooter": {
+               "recipe": "file(turnip_shooter_recipe.json)"
+            }
+         }
+      },
+   }
+}

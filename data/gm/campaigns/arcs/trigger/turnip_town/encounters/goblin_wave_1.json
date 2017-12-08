@@ -1,0 +1,33 @@
+{
+   "type": "encounter",
+   "encounter_type": "create_mission",
+   "rarity": "common",
+   "in_edge": "goblin_wave_1",
+   "create_mission_info": {
+      "spawn_range": {
+         "min": 25,
+         "max": 100
+      },
+      "mission": {
+         "pillage_radius": {
+            "min": 0,
+            "max": 20
+         },
+         "npc_player_id": "goblins",
+         "ctx_entity_registration_path": "goblin_wave_1",
+         "role": "pillage",
+         "offset": { "x": 0, "y": 0, "z": 0 },
+         "members": {
+            "thugs": {
+               "from_population": {
+                  "location": { "x": 0, "y": 0, "z": 0 },
+                  "min": 1,
+                  "max": 2,
+                  "range": 1
+               },
+               "tuning": "startermod_turnip_town:monster_tuning:goblins:turndown"
+            }
+         }
+      }
+   }
+}
